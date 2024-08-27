@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        form input[type="tel"] {
+            background-color: red;
+        }
+
+        /* button[disabled] {
+            background-color: red;
+        } */
+
+        button {
+            background-color: attr(data-cor);
+        }
+    </style>
+</head>
+<body>
+    <button disabled data-cor="#00F">Botão</button>
+    
+    <form action="">
+        <input type="text">
+        <input type="tel">
+        <input type="tel">
+        <button>CLIQUE AQUI</button>
+    </form>
+</body>
+</html>
