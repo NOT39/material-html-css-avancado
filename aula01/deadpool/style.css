@@ -113,6 +113,34 @@ header > nav a {
   box-shadow: 0 0 50px 15px var(--vermelho-deadpool);
 }
 
+#hero_texto {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+  z-index: -2;
+
+  background-image: var(--gradiente-titulo);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#hero_texto > h1 {
+  font-size: 15vw;
+  font-family: 'Alfa Slab One', sans-serif;
+  font-weight: 400;
+}
+
+#hero_texto > p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2vw;
+}
+
 #hero_botoes {
   position: absolute;
   bottom: 1rem;
