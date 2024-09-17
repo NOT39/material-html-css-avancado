@@ -1,0 +1,33 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+
+    max-width: 1120px;
+    margin: auto;
+
+    padding: 1rem 1rem;
+
+    border-bottom:  1px solid var(--cinza);
+
+    position: sticky;
+    top: 0;
+
+    background-color: var(--fundo);
+}
+
+header > img {
+    width: 10rem;
+}
+
+header > nav > ul {
+    display: flex;
+    gap: 12px;
+    
+    list-style: none;
+}
+
+header > nav a {
+    color: var(--branco);
+}
