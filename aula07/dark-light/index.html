@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --text: light-dark(#1a1a1a, #FAFAFA);
+            --background: light-dark(#FAFAFA, #1a1a1a);
+
+            color-scheme: dark light;
+        }
+
+        body {
+            background-color: var(--background);
+            color: var(--text);
+        }
+
+        #container {
+            color-scheme: only dark;
+            color: var(--text);
+            background-color: var(--background);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Esse é o meu parágrafo</p>
+
+    <div id="container">
+        <h2>Título only light</h2>
+        <p>Texto only light</p>
+    </div>
+</body>
+</html>

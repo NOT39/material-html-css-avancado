@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #secao-fs {
+            background-color: green;
+
+            &:has(span) {
+                background-color: blue;
+            }
+
+            &:hover {
+                background-color: red;
+            }
+
+            :is(h2) {
+                color: aqua;
+            }
+
+            > p {
+                color: aquamarine;
+            }
+
+            :is(h3) {
+                color: bisque;
+            }
+
+            > div {
+                h4 {
+                    color: brown;
+                }
+                
+                p {
+                    color: azure;
+                }
+            }
+
+            [class*="--hidden"] {
+                display: none;
+            }
+        }
+
+        #secao-ds {
+            background-color: blueviolet;
+
+            h2 {
+                color: aqua;
+            }
+
+            p {
+                color: aquamarine;
+            }
+        }
+
+        #secao-fd {
+            background-color: yellow;
+
+            h2 {
+                color: aqua;
+            }
+
+            p {
+                color: aquamarine;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Infinity School</h1>
+
+    <section id="secao-fs">
+        <h2>Curso Dev Fullstack</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium facilis omnis voluptatem dolores ullam saepe nesciunt quod provident! Minus dolorum neque quibusdam nam tempore sit sapiente eos deleniti repudiandae. Nesciunt?</p>
+
+        <h3>Módulos</h3>
+
+        <div class="modulo--hidden">
+            <h4>HTML e CSS</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam modi rerum officia quis mollitia nobis accusantium dolor! Magnam delectus dignissimos unde assumenda, dolorum reiciendis sequi, esse ducimus non odio provident.</p>
+        </div>
+
+        <div class="modulo">
+            <h4>JavaScript</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos velit minus nulla, necessitatibus illo dolor temporibus fuga, assumenda atque magni qui, tenetur nihil possimus commodi porro? Accusantium eius consequatur maiores.</p>
+        </div>
+
+        <div class="modulo">
+            <h4>Lógica de Programação</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, magni optio aperiam eligendi fugiat esse aliquam nemo, cupiditate tenetur, accusantium rerum. Blanditiis doloribus ut sapiente quis nulla nihil facere hic.</p>
+        </div>
+
+        <div class="modulo">
+            <h4>Python</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nostrum, accusantium quaerat perferendis omnis non debitis voluptates, minus vero delectus in quibusdam quia placeat ea sapiente. Placeat quia autem dolores.</p>
+        </div>
+    </section>
+
+    <section id="secao-ds">
+        <h2>Curso Data Science</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates consequatur possimus sequi perferendis minus aliquam molestiae accusantium natus consequuntur itaque, voluptatibus similique quo maxime delectus sed? Tempora provident totam sint!</p>
+    </section>
+
+    <section id="secao-fd">
+        <h2>Curso de Film Design</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti rem, quae vero iure ad deserunt ipsum, saepe illum est, laboriosam sequi quia. Sapiente quibusdam facilis, sed quos dolorum asperiores dignissimos.</p>
+    </section>
+
+    <section id="secao-foto">
+        <h2>Curso de Fotografia</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur itaque mollitia eveniet qui doloribus, quidem ad fuga voluptatum dignissimos commodi ipsum nam minima et facere, suscipit vero temporibus quibusdam ducimus?</p>
+    </section>
+</body>
+</html>

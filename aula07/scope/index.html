@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: white;
+        }
+
+        h1 {
+            color: brown;
+        }
+
+        section {
+            h2 {
+                font-size: 36px;
+            }
+            
+            p {
+                color: aqua;
+            }
+        }
+
+        @scope (section) to (.container) {
+            :scope {
+                background-color: blue;
+            }
+            
+            .card {
+                background-color: red;
+                color: blue;
+
+                p {
+                    color: beige;
+                }
+            }
+        }   
+    </style>
+</head>
+<body>
+    <h1>React.JS</h1>
+
+    <section>
+        <style>
+            @scope {
+                .card {
+                    background-color: blueviolet;
+                 }
+            }
+        </style>
+
+        <h2>Básico</h2>
+        <p>fdjaosfjdos</p>
+
+        <div class="card">
+            <img src="" alt="Imagem exemplo">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, aperiam aliquam quis labore neque cupiditate ex quo veritatis ipsa adipisci soluta delectus autem saepe repudiandae! Labore minima quas pariatur eius!</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Ecossistema React</h2>
+        <p>fdsjafodjsfo</p>
+
+        <div class="container">
+            <div class="card">
+                <img src="" alt="Imagem exemplo">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, aperiam aliquam quis labore neque cupiditate ex quo veritatis ipsa adipisci soluta delectus autem saepe repudiandae! Labore minima quas pariatur eius!</p>
+            </div>
+        </div>
+       
+    </section>
+
+    <section>
+        <h2>Ferramentas Auxilias</h2>
+        <p>fjadsofjsd</p>
+
+
+    </section>
+
+    <section>
+        <h2>Avançado</h2>
+        <p>fjsdaofjisadf</p>
+
+
+    </section>
+
+    <div class="card">
+        <h2>Esse é card</h2>
+
+        <p>fadjsofdjasofj</p>
+    </div>
+</body>
+</html>

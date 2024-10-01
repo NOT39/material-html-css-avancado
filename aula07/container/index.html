@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #container-1 {
+            container-name: texto;
+            container-type: inline-size;
+        }
+        
+        :where(div > a) {
+            background-color: aqua;
+        }
+
+        @container texto (min-width: 300px) {
+            a {
+                background-color: red;
+            }
+        }
+
+        @container style(--invisivel: true) {
+            a {
+                display: none;
+            }
+        }
+
+        @container style(--cor: magenta) {
+            a {
+                color: magenta;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container-1">
+        <a href="#">Meu textdasdadsadasdasdsadassdsadaso</a>
+    </div>
+
+    <div style="--invisivel: false;">
+        <a href="#">Meu textdasdadsadasdasdsadassdsadaso</a>
+    </div>
+
+    <div style="--cor: magenta;">
+        <a href="#">Meu textdasdadsadasdasdsadassdsadaso</a>
+    </div>
+</body>
+</html>
