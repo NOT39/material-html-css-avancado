@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    color-scheme: light dark;
+    
+    --primary: light-dark(#FAFAFA, #272221);
+    --secondary: light-dark(#272221, #FAFAFA);
+
+    --brand-orange: #EC981E;
+    --warning: #E25858;
+    --label: light-dark(#EDEDED, #403937);
+}
+
+body {
+    font-size: 1rem;
+
+    color: var(--secondary);
+    background-color: var(--primary);
+    font-family: 'Roboto Condensed', sans-serif;
+}
